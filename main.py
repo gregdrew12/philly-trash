@@ -65,6 +65,10 @@ def main():
     info = get_trash_day(lat, lon)
     print(info)
 
+    lat, lon = geocode_address("2801 North Kent Road, Broomall, PA, 19008")
+    info = get_trash_day(lat, lon)
+    print(info)
+
 
 if __name__ == "__main__":
     main()
